@@ -48,17 +48,18 @@ const Website = {
     
     },
 
-    deleteBlocks(){
+    deleteContent(){
 
         const blocks = document.querySelectorAll(".content-block");
+  
         if(blocks){
             blocks.forEach(block => block.remove());
-
         }
+        
     },
     
     setPage(){
-        this.deleteBlocks()
+        this.deleteContent()
         pageLoad(this.currentPage);
     },
 

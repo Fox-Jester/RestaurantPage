@@ -1,6 +1,6 @@
 import createHomePage from "./pages/home"
 import createAboutPage from "./pages/about";
-
+import createMenuPage from "./pages/menu";
 
 export default function pageLoad(page){
     console.log(page)
@@ -13,7 +13,7 @@ export default function pageLoad(page){
             break;
         
         case "menu":
-        
+            createMenuPage();
             break
     }
 }

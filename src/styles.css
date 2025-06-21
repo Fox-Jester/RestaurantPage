@@ -23,6 +23,10 @@ body {
   cursor: pointer;
 }
 
+.nav-bar .active{
+  background-color: lightgrey;
+}
+
 #content{
   height: 100vh;
   width: 100%;
@@ -50,6 +54,11 @@ h1{
 }
 
 
+.main-block{
+  margin-bottom: 80px;
+  width: 700px;
+}
+
 .content-block{
   background-color: rebeccapurple;
   border: 2px solid rgb(255, 255, 255);
@@ -63,9 +72,33 @@ h1{
   padding: 2px 5px;
 }
 
-
-.main-block{
-  margin-bottom: 80px;
-  width: 700px;
+.content-block.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 12px;
 }
 
+.content-block.item .item-name{
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.content-block.item .buy-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-block.item .buy-group p{
+  margin: 0;
+}
+
+.content-block.item button{
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

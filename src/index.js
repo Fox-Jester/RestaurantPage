@@ -70,10 +70,13 @@ const Website = {
         this.content.appendChild(img)
     },
 
+ 
+
     init(){
         this.createImg()
         this.applyBtnEL()
         this.setPage()
+       
     }
 
   

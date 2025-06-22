@@ -16,9 +16,9 @@ export default class contentBlock{
                 div.classList.add("main-block");
             }
     
-            const h2 = document.createElement("h2");
-            h2.textContent = this.title;
-            div.appendChild(h2);
+            const mainTag = this.main ? document.createElement("h1") : document.createElement("h2");
+            mainTag.textContent = this.title;
+            div.appendChild(mainTag);
     
            
             const p = document.createElement("p");

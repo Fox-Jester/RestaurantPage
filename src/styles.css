@@ -54,10 +54,6 @@ h1{
 }
 
 
-.main-block{
-  margin-bottom: 80px;
-  width: 700px;
-}
 
 .content-block{
   background-color: rebeccapurple;
@@ -70,6 +66,15 @@ h1{
   width: 500px;
   margin: 50px 0 50px;
   padding: 2px 5px;
+}
+.main-block{
+  margin-bottom: 80px;
+  width: 700px;
+}
+
+.content-block p{
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .content-block.item{
@@ -101,4 +106,20 @@ h1{
   font-size: 1.1rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.credit-tag{
+  border-radius: 40px;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+.credit-tag a{
+  font-size: 1.1rem;
+  color: cyan;
+ 
 }

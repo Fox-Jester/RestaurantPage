@@ -1,5 +1,6 @@
 
 const content = document.querySelector("#content");
+import ContentBlock from "../ContentBlock.js";
 
 function createMenuItem(name, price){
     const contentItem = document.createElement("div");
@@ -27,6 +28,11 @@ function createMenuItem(name, price){
 }
 
 export default function createMenu(){
+
+    const menuTag = new ContentBlock("Menu", "", true);
+
+    menuTag.create()
+
     const menuArray = [
         { name: "Mystery Smoothie", price: "$5.99" },
         { name: "StrawberryBanana", price: "$5.99" },

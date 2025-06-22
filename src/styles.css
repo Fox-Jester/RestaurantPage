@@ -12,18 +12,23 @@ body {
    background-color: rebeccapurple;
    padding: 12px;
    display: flex;
-   justify-content: end;
-   gap: 10px;
+   justify-content: space-between;
+   align-items: center;
    border: 2px solid white;
 }
 
-.nav-bar button{
+.btn-group{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-group button{
   font-size: 1.1rem;
   padding: 8px 12px;
   cursor: pointer;
 }
 
-.nav-bar .active{
+.btn-group .active{
   background-color: lightgrey;
 }
 
@@ -41,7 +46,9 @@ body {
 
 
 h1{
-  font-size: 2rem
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 3px hsl(0, 0%, 25%);
 }
 
 .content-bg{
@@ -110,7 +117,7 @@ h1{
 
 .credit-tag{
   border-radius: 40px;
-  background-color: rebeccapurple;
+  background-color: transparent;
   color: white;
   padding: 8px 12px;
   position: absolute;

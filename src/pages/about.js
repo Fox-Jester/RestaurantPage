@@ -1,5 +1,5 @@
 
-import contentBlock from "./contentBlock";
+import ContentBlock from "../ContentBlock";
 
 const aboutUs = `Fresh, Fruity, and Full of Good Vibes.
 Welcome to Super Smoothie Shop, where every sip is crafted with purpose and packed with flavor.
@@ -17,8 +17,8 @@ From classic blends to adventurous new mixes,
 
 
 
-const aboutUsBlock = new contentBlock("About us", aboutUs, true);
-const ourStoryBlock = new contentBlock("Our Story", ourStory)
+const aboutUsBlock = new ContentBlock("About us", aboutUs, true);
+const ourStoryBlock = new ContentBlock("Our Story", ourStory)
 
 
 function createAbout() {

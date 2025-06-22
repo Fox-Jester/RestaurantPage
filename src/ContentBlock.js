@@ -2,7 +2,7 @@
 const content = document.querySelector("#content");
 
 
-export default class contentBlock{
+export default class ContentBlock{
     constructor(title, paragraph, main=false){
         this.title = title,
         this.paragraph = paragraph,
@@ -16,7 +16,7 @@ export default class contentBlock{
                 div.classList.add("main-block");
             }
     
-            const mainTag = this.main ? document.createElement("h1") : document.createElement("h2");
+            const mainTag = document.createElement("h2");
             mainTag.textContent = this.title;
             div.appendChild(mainTag);
     

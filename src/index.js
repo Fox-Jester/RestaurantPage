@@ -1,6 +1,6 @@
 
 import "./styles.css"
-import shop_bg from "./shop_bg.jpg"
+import fruits_bg from "./fruits_bg.webp"
 import pageLoad from "./page-load"
 
 
@@ -66,7 +66,7 @@ const Website = {
     createImg(){
         const img = document.createElement("img");
         img.classList.add("content-bg");
-        img.src = shop_bg;
+        img.src = fruits_bg;
         this.content.appendChild(img)
     },
 

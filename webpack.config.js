@@ -13,7 +13,7 @@ module.exports = {
 
   devtool: "eval-source-map",
   devServer: {
-  watchFiles: ["./src/template.html"],
+  watchFiles: ["./src/index.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -33,7 +33,7 @@ module.exports = {
       },
 
       {
-      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
       type: "asset/resource",
       },
     ],
